@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Tailor
-//
-//  Created by pivotal on 3/3/16.
-//  Copyright © 2016 Zac Clark. All rights reserved.
-//
-
 import Cocoa
 
 @NSApplicationMain
@@ -17,9 +9,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
-        
-        
         if let button = statusItem.button {
             button.image = NSImage(named: "StatusBarButtonImage")
             button.action = #selector(AppDelegate.stuff(_:))
@@ -31,9 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+        // Probably terminate anything managed here?
     }
-
-
 }
 
