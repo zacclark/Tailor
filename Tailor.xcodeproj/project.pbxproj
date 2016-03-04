@@ -32,6 +32,7 @@
 		AEFA50A41C89366600605B84 /* TailorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TailorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFA50A81C89366600605B84 /* TailorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailorTests.swift; sourceTree = "<group>"; };
 		AEFA50AA1C89366600605B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFA50B31C89527900605B84 /* Procfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Procfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				AEFA509A1C89366600605B84 /* Assets.xcassets */,
 				AEFA509C1C89366600605B84 /* MainMenu.xib */,
 				AEFA509F1C89366600605B84 /* Info.plist */,
+				AEFA50B31C89527900605B84 /* Procfile */,
 			);
 			path = Tailor;
 			sourceTree = "<group>";
