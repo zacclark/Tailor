@@ -31,18 +31,33 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationWillTerminate(aNotification: NSNotification) {
         // Probably terminate anything managed here?
+        tasks.forEach({ task in task.terminate() })
     }
     
     //MARK: - Private
     
     func updateMenu() {
-        statusItem.menu = AppMenu(
-            procfiles: procfiles,
-            loadProcfileCallback: pickProcfile,
-            quitCallback: imDONE
-        ).menu
+        statusItem.menu = buildMenuForProcfiles(
+            procfiles,
+            onLoadProcfile: pickProcfile,
+            onQuit: imDONE,
+            onStartEntry: letsTryLaunchingThisEh,
+            onLogEntry: { procfile, entry in print("Log \(entry)") }
+        ).asNSMenu
     }
-    
+
+    private var tasks: [NSTask] = []
+    func letsTryLaunchingThisEh(procfile: Procfile, entry: Procfile.Entry) {
+        guard let directory = procfile.URL.standardizedURL?.URLByDeletingLastPathComponent?.path else { return }
+
+        let task = NSTask()
+        task.currentDirectoryPath = directory
+        task.launchPath = "/bin/sh"
+        task.arguments = ["-c", entry.command]
+        task.launch()
+        tasks.append(task)
+    }
+
     func pickProcfile() {
         if let procfile = PanelFilePicker().pickFile().flatMap(Procfile.init) {
             procfileURLs.append(procfile.URL)
@@ -52,6 +67,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func imDONE() {
+
         NSRunningApplication.currentApplication().terminate()
     }
 }

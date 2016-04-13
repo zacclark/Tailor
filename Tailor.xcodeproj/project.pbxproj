@@ -10,7 +10,7 @@
 		AE4169301C8C3516009A9E75 /* ProcfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41692F1C8C3516009A9E75 /* ProcfileTests.swift */; };
 		AE4169311C8C3525009A9E75 /* Procfile in Resources */ = {isa = PBXBuildFile; fileRef = AEFA50B31C89527900605B84 /* Procfile */; };
 		AE4169331C9DF2FF009A9E75 /* FilePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4169321C9DF2FF009A9E75 /* FilePicker.swift */; };
-		AE4169351C9DF4F9009A9E75 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4169341C9DF4F9009A9E75 /* AppMenu.swift */; };
+		AE4169351C9DF4F9009A9E75 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4169341C9DF4F9009A9E75 /* Menu.swift */; };
 		AEFA50991C89366600605B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA50981C89366600605B84 /* AppDelegate.swift */; };
 		AEFA509B1C89366600605B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFA509A1C89366600605B84 /* Assets.xcassets */; };
 		AEFA509E1C89366600605B84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEFA509C1C89366600605B84 /* MainMenu.xib */; };
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		AE41692F1C8C3516009A9E75 /* ProcfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcfileTests.swift; sourceTree = "<group>"; };
 		AE4169321C9DF2FF009A9E75 /* FilePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePicker.swift; sourceTree = "<group>"; };
-		AE4169341C9DF4F9009A9E75 /* AppMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		AE4169341C9DF4F9009A9E75 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		AEFA50951C89366600605B84 /* Tailor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tailor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFA50981C89366600605B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEFA509A1C89366600605B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 				AEFA509F1C89366600605B84 /* Info.plist */,
 				AEFA50B41C8B670400605B84 /* Procfile.swift */,
 				AE4169321C9DF2FF009A9E75 /* FilePicker.swift */,
-				AE4169341C9DF4F9009A9E75 /* AppMenu.swift */,
+				AE4169341C9DF4F9009A9E75 /* Menu.swift */,
 			);
 			path = Tailor;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4169351C9DF4F9009A9E75 /* AppMenu.swift in Sources */,
+				AE4169351C9DF4F9009A9E75 /* Menu.swift in Sources */,
 				AE4169331C9DF2FF009A9E75 /* FilePicker.swift in Sources */,
 				AEFA50991C89366600605B84 /* AppDelegate.swift in Sources */,
 				AEFA50B51C8B670400605B84 /* Procfile.swift in Sources */,
